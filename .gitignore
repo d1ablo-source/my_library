@@ -1,0 +1,36 @@
+# --- Виртуальное окружение (Virtual Environment) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Локальные базы данных (если используете SQLite для тестов) ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Секреты и настройки окружения (КРИТИЧЕСКИ ВАЖНО!) ---
+.env
+.env.*
+!.env.example
+
+# --- Кэш Python и временные файлы ---
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Настройки IDE / Редакторов кода ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Логи приложения ---
+*.log
+logs/
